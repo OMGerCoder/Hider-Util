@@ -708,6 +708,37 @@
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9yM-5i-WjC">
+                                <rect key="frame" x="197" y="222" width="87" height="32"/>
+                                <buttonCell key="cell" type="push" title="Hide All" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="m9t-AG-w4l">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NIR-XE-vIY">
+                                <rect key="frame" x="194" y="170" width="92" height="32"/>
+                                <buttonCell key="cell" type="push" title="Show All" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JVu-3N-CZy">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WPH-PI-djN">
+                                <rect key="frame" x="207" y="42" width="66" height="32"/>
+                                <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KMO-FY-0wv">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="WPH-PI-djN" secondAttribute="bottom" constant="49" id="F1T-fe-pKC"/>
+                            <constraint firstAttribute="bottom" secondItem="9yM-5i-WjC" secondAttribute="bottom" constant="229" id="Z9q-hc-tlk"/>
+                            <constraint firstItem="NIR-XE-vIY" firstAttribute="top" secondItem="9yM-5i-WjC" secondAttribute="bottom" constant="31" id="iOG-ac-uLL"/>
+                            <constraint firstItem="NIR-XE-vIY" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="k1Z-EB-ZUf"/>
+                            <constraint firstItem="WPH-PI-djN" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="tfp-Fh-hzF"/>
+                            <constraint firstItem="9yM-5i-WjC" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="xIY-0l-1Vi"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
